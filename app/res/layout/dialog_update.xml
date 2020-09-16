@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/update_dialog" android:layout_width="250.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0sp" android:textColor="@color/black" android:id="@id/title" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:text="工具助手" />
+    <View android:background="@color/view_backgroud" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <TextView android:textSize="18.0sp" android:textColor="@color/gray" android:id="@id/content" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:text="版本：V1.0.1\n包大小：13.6MB\n更新时间：" android:lineSpacingExtra="3.0dip" />
+    <TextView android:textSize="18.0sp" android:textColor="@color/black" android:id="@id/info" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginBottom="20.0dip" android:text="更新说明：" />
+    <View android:background="@color/view_backgroud" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_showbutton" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <TextView android:textSize="18.0sp" android:textColor="@color/gray" android:gravity="center" android:id="@id/cancel" android:background="@drawable/update_left" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="下次再说" android:layout_weight="1.0" />
+        <View android:background="@color/view_backgroud" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/btn_background" android:gravity="center" android:id="@id/submit" android:background="@drawable/update_right" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="立即更新" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

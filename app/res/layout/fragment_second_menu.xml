@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/menuSecond" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@mipmap/selectbg" android:scaleType="centerCrop" />
+    <View android:background="@android:drawable/screen_background_dark_transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:gravity="center|right" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:orientation="horizontal" android:id="@id/share" android:visibility="gone" android:layout_width="120.0dip" android:layout_height="40.0dip" android:layout_marginBottom="15.0dip">
+            <ImageView android:id="@id/iv_share" android:src="@mipmap/share2" style="@style/iv_secodFragment" />
+            <TextView android:text="分    享" android:layout_toLeftOf="@id/iv_share" style="@style/tv_secodFragment" />
+        </RelativeLayout>
+        <RelativeLayout android:orientation="horizontal" android:id="@id/about" android:layout_width="120.0dip" android:layout_height="40.0dip" android:layout_marginBottom="15.0dip">
+            <ImageView android:id="@id/iv_about" android:src="@mipmap/new_about" style="@style/iv_secodFragment" />
+            <TextView android:text="关    于" android:layout_toLeftOf="@id/iv_about" style="@style/tv_secodFragment" />
+        </RelativeLayout>
+        <RelativeLayout android:orientation="horizontal" android:id="@id/set" android:layout_width="120.0dip" android:layout_height="40.0dip">
+            <ImageView android:id="@id/iv_set" android:src="@mipmap/new_set" style="@style/iv_secodFragment" />
+            <TextView android:text="设    置" android:layout_toLeftOf="@id/iv_set" style="@style/tv_secodFragment" />
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

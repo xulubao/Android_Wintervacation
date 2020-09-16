@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout android:id="@id/activity_na" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/rl_base" android:background="?android:textColorPrimary" android:fitsSystemWindows="true" android:clipToPadding="true" android:layout_width="fill_parent" android:layout_height="55.0dip">
+            <com.pkmmte.view.CircularImageView android:id="@id/iv_icon" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_marginLeft="10.0dip" android:src="@mipmap/timg" android:layout_centerVertical="true" />
+            <TextView android:textSize="20.0sp" android:textColor="@color/white" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="沐风" android:layout_toRightOf="@id/iv_icon" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/iv_share" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginRight="15.0dip" android:src="@mipmap/share" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/iv_dbg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+            <FrameLayout android:id="@id/fl_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </RelativeLayout>
+    </LinearLayout>
+    <android.support.design.widget.NavigationView android:layout_gravity="left" android:id="@id/nav" android:fitsSystemWindows="true" android:layout_width="wrap_content" android:layout_height="fill_parent" app:menu="@menu/new_menu" app:headerLayout="@layout/head" />
+</android.support.v4.widget.DrawerLayout>

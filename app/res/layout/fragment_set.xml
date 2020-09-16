@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/voicebg2" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/tv_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="15.0dip">
+        <TextView android:textSize="18.0sp" android:textColor="?android:textColorPrimary" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="通用设置" />
+        <TextView android:textSize="18.0sp" android:id="@id/tv_theme" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="设置主题颜色（琉璃绿）" />
+        <TextView android:textSize="18.0sp" android:id="@id/tv_dbg" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="设置应用背景图片" />
+        <TextView android:textSize="18.0sp" android:id="@id/tv_close" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="退出当前帐号" />
+        <TextView android:textSize="18.0sp" android:id="@id/tv_username" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="设置昵称" />
+    </LinearLayout>
+</LinearLayout>

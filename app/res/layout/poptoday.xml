@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/contact_edit_edittext_normal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="18.0sp" android:textColor="@color/text_first" android:id="@id/tv_info" android:padding="10.0dip" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </ScrollView>
+</RelativeLayout>

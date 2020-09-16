@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="@color/colorMain" android:ellipsize="end" android:gravity="center|left" android:id="@id/magnet_name" android:padding="@dimen/default_pad2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/app_name" android:lines="2" />
+    <LinearLayout android:padding="@dimen/default_pad2" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/file_item_text_size" android:textColor="@color/gray_8f" android:id="@id/magnet_date" android:padding="@dimen/default_pad2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/magnet_date" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/file_item_text_size" android:textColor="@color/gray_8f" android:id="@id/magnet_size" android:padding="@dimen/default_pad2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/magnet_size" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/file_item_text_size" android:textColor="@color/gray_8f" android:id="@id/magnet_hot" android:padding="@dimen/default_pad2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/magnet_hot" android:layout_weight="1.0" />
+    </LinearLayout>
+    <TextView android:background="@color/gray_cccc" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="@dimen/default_pad" android:layout_marginRight="@dimen/default_pad" />
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true">
+        <Button android:textSize="20.0sp" android:textColor="@color/white" android:id="@id/btn_scan" android:background="@drawable/btn_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="扫一扫" android:layout_weight="1.0" />
+        <Button android:textSize="20.0sp" android:textColor="@color/white" android:id="@id/btn_create" android:background="@drawable/btn_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="生成二维码" android:layout_weight="1.0" />
+    </LinearLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/ll_btn">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/rl_info" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <EditText android:textSize="20.0sp" android:textColor="@color/black" android:gravity="center|left|top" android:id="@id/tv_info" android:background="@drawable/contact_edit_edittext_normal" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="180.0dip" android:layout_margin="15.0dip" />
+                <ImageButton android:id="@id/iv_copy" android:background="@mipmap/copy" android:layout_width="20.0dip" android:layout_height="25.0dip" android:layout_marginTop="-40.0dip" android:layout_marginRight="20.0dip" android:layout_below="@id/tv_info" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/rl_bitmap" android:background="@drawable/contact_edit_edittext_normal" android:padding="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="280.0dip" android:layout_margin="15.0dip" android:layout_marginBottom="15.0dip">
+                <ImageView android:id="@id/iv_bitmap" android:layout_width="270.0dip" android:layout_height="270.0dip" android:layout_centerHorizontal="true" />
+                <ImageButton android:id="@id/iv_save" android:background="@mipmap/save" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="5.0dip" android:layout_toRightOf="@id/iv_bitmap" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

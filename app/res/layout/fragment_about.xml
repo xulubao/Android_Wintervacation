@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/voicebg2" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:background="@drawable/tv_bg" android:layout_width="fill_parent" android:layout_height="170.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="25.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="15.0dip">
+            <com.pkmmte.view.CircularImageView android:id="@id/person" android:layout_width="125.0dip" android:layout_height="125.0dip" android:layout_marginLeft="15.0dip" android:src="@mipmap/timg" android:layout_centerVertical="true" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_toRightOf="@id/person" android:layout_centerVertical="true">
+                <TextView android:textSize="20.0sp" android:textColor="?android:textColorPrimary" android:id="@id/tv_user" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="沐风沐风沐风" />
+                <TextView android:textSize="14.0sp" android:ellipsize="marquee" android:id="@id/tv_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="人生像一场没有尽头的旅行..." android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" />
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:background="@drawable/tv_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="15.0dip">
+            <TextView android:textSize="18.0sp" android:textColor="?android:textColorPrimary" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="赞助作者" />
+            <TextView android:textSize="14.0sp" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="如果您认为本应用很好用，不妨小额赞助我一下，这样可以增加我维护应用的动力，也能补贴下本应用服务器的成本。(点击下方二维码，进入微信扫一扫，并点击右上角“...” 从相册选取二维码)" />
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/iv_pay" android:layout_width="200.0dip" android:layout_height="200.0dip" />
+            <LinearLayout android:orientation="horizontal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+                <TextView android:textSize="18.0sp" android:textColor="?android:textColorPrimary" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="赞助列表" />
+                <TextView android:textSize="14.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="(手动更新，可能会有所延误)" />
+            </LinearLayout>
+            <TextView android:textSize="16.0sp" android:textColor="?android:textColorPrimary" android:ellipsize="marquee" android:id="@id/tv_sponsor" android:padding="8.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="数据加载失败，请稍后再试..." android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:background="@drawable/tv_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="15.0dip">
+            <TextView android:textSize="18.0sp" android:textColor="?android:textColorPrimary" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="声明" />
+            <TextView android:textSize="14.0sp" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="关于本程序：\n1、本程序为免费应用，如果您是在别处花钱购买的该应用，那么您已经上当或使用了盗版软件。\n2、软件中一些需要隐私权限功能的操作请谨慎对待，如因使用本程序而对您的设备或其它事物造成损失，一切与本人无关，皆不承担任何责任！\n3、本程序开发目的仅供娱乐学习，切不可使用应用中的功能做违法的事情，如果做违法的事情，作者有权终止您使用该应用，作者并不承担您违法所带来的所有法律责任。使用软件请遵守国家相关法律法规。\n4、软件中部分功能限制用户等级，如果需要升级等级，请联系作者。" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:background="@drawable/tv_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="15.0dip">
+            <TextView android:textSize="18.0sp" android:textColor="?android:textColorPrimary" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="联系作者" />
+            <TextView android:textSize="18.0sp" android:id="@id/tv_qq" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="QQ群--862466785" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

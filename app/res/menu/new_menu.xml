@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@mipmap/redbacket" android:id="@id/redbacket" android:visible="false" android:title="抢红包" />
+    <item android:icon="@mipmap/scan" android:id="@id/scan" android:title="扫一扫" />
+    <item android:icon="@mipmap/game" android:id="@id/game" android:title="小游戏" />
+    <item android:icon="@mipmap/chat" android:id="@id/chat" android:visible="false" android:title="即时通讯" />
+    <item android:icon="@mipmap/barrage" android:id="@id/barrage" android:title="弹    幕" />
+    <item android:icon="@mipmap/more" android:id="@id/more" android:title="更    多" />
+    <item android:icon="@mipmap/about" android:id="@id/about" android:title="关    于" />
+    <item android:icon="@mipmap/set" android:id="@id/set" android:title="设    置" />
+</menu>

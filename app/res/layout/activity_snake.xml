@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <central.scjgt.view.SnakeView android:id="@id/snake" android:background="#ff809fcd" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <Button android:textSize="18.0sp" android:textColor="@color/black" android:id="@id/start" android:background="@drawable/btn_playbg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:text="PLAY" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="24.0sp" android:textColor="#ffff5135" android:gravity="center_horizontal" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        <RadioGroup android:orientation="horizontal" android:id="@id/difficulty" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/text" android:layout_centerHorizontal="true">
+            <RadioButton android:textSize="18.0sp" android:id="@id/easy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="简单" />
+            <RadioButton android:textSize="18.0sp" android:id="@id/common" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:checked="true" android:text="一般" />
+        </RadioGroup>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/control" android:background="#00ffffff" android:layout_width="195.0dip" android:layout_height="180.0dip" android:layout_marginBottom="40.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <Button android:gravity="center_horizontal" android:id="@id/left" android:background="@drawable/left" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <Button android:gravity="center_horizontal" android:id="@id/right" android:background="@drawable/right" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <Button android:gravity="center_horizontal" android:id="@id/top" android:background="@drawable/top" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+        <Button android:gravity="center_horizontal" android:id="@id/bottom" android:background="@drawable/bottom" android:visibility="visible" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <TextView android:textSize="12.0sp" android:textColor="@color/red" android:id="@id/tv_qwScore" android:layout_width="130.0dip" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginRight="18.0dip" android:layout_marginBottom="5.0dip" android:text="全网一般最高分：" android:layout_alignParentRight="true" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/red" android:id="@id/tv_lsScore" android:layout_width="130.0dip" android:layout_height="wrap_content" android:layout_marginRight="18.0dip" android:text="当前时刻所得分：" android:layout_below="@id/tv_qwScore" android:layout_alignParentRight="true" />
+    <ImageView android:id="@id/iv_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="18.0dip" android:src="@mipmap/close" />
+</RelativeLayout>

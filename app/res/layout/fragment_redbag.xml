@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:orientation="vertical" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="18.0sp" android:textColor="@color/black" android:id="@id/tv_start" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="15.0dip" android:text="打开插件（未开启）" />
+        <include layout="@layout/preference_category" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip">
+            <TextView android:textSize="18.0sp" android:textColor="#ff333333" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1、设置不抢名单" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_set" android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_marginLeft="10.0dip" android:src="@mipmap/set" />
+        </LinearLayout>
+        <TextView android:textSize="18.0sp" android:textColor="#ff333333" android:ellipsize="marquee" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="15.0dip" android:text="2、监视系统通知\n\n3、监视当前聊天页面" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginBottom="10.0dip">
+            <TextView android:textSize="18.0sp" android:textColor="#ff333333" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="4、监视自己发的包" />
+            <CheckBox android:id="@id/checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginBottom="10.0dip">
+            <TextView android:textSize="18.0sp" android:textColor="#ff333333" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="5、自动关闭红包详情页" />
+            <CheckBox android:id="@id/checkbox3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:checked="true" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginBottom="10.0dip">
+            <TextView android:textSize="18.0sp" android:textColor="#ff333333" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="6、监视聊天列表(会误判)" />
+            <CheckBox android:id="@id/checkbox2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:checked="true" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginBottom="10.0dip">
+            <TextView android:textSize="18.0sp" android:textColor="#ff333333" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="7、自动回到聊天列表页面" />
+            <CheckBox android:id="@id/checkbox4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" />
+        </LinearLayout>
+        <include layout="@layout/preference_category2" />
+        <TextView android:textSize="18.0sp" android:textColor="#ff333333" android:ellipsize="marquee" android:id="@id/tv_info" android:fadingEdge="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="15.0dip" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="18.0sp" android:textColor="#ff333333" android:id="@id/tv_sjyc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="延迟抢红包:(0毫秒)" />
+            <SeekBar android:id="@id/seekbar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="10.0dip" android:max="3000" android:layout_below="@id/tv_sjyc" />
+        </RelativeLayout>
+        <include layout="@layout/preference_category3" />
+        <TextView android:textSize="18.0sp" android:textColor="#ff333333" android:id="@id/tv_tip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="15.0dip" android:text="使用：点击打开插件 --> 找到服务 --> 找到工具助手将其开启即可。\n说明：本功能是在微信7.0.0以上版本开发，如想使用本功能请将微信升级。\n抢红包过程中请最好确保屏幕常亮，并保持微信一直打开。" android:lineSpacingMultiplier="1.2" />
+        <include layout="@layout/preference_category4" />
+        <TextView android:textSize="20.0sp" android:textColor="@color/black" android:id="@id/tv_keepalive" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="10.0dip" android:text="开启大招（未开启）" />
+        <View android:background="@color/view_backgroud" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" />
+        <TextView android:textSize="18.0sp" android:textColor="#ff333333" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="15.0dip" android:text="场景：关于一些国产手机由于服务在几分钟内被系统杀死，提供该解决方式，建议配合下方应用后台运行参考方案一起使用。\n实现方法：在服务后台播放一段无声的音乐。\n缺点：消耗电量、多任务菜单提示音乐播放icon" android:lineSpacingMultiplier="1.2" />
+        <include layout="@layout/preference_category5" />
+        <TextView android:textSize="18.0sp" android:textColor="#ff333333" android:id="@id/tv_setting" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="15.0dip" android:text="华为手机、小米手机\n\n其他手机：百度搜索 **（手机类型）手机如何设置应用后台运行" android:lineSpacingMultiplier="1.2" />
+    </LinearLayout>
+</ScrollView>

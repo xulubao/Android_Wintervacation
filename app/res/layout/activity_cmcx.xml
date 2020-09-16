@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/apptobar" />
+    <EditText android:id="@id/et_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="25.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="25.0dip" android:hint="请输入您要查重的姓名" />
+    <Button android:textSize="18.0sp" android:textColor="@color/white" android:id="@id/btn_search" android:background="@drawable/btn_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="重名查询" />
+    <TextView android:textColor="@color/black" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="温馨提示：查询范围仅限安徽省全省在籍人口" />
+</LinearLayout>

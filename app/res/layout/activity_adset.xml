@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/apptobar" />
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="18.0sp" android:textColor="#ff333333" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="监视自己发的包" />
+                <Switch android:id="@id/switch1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <View android:background="@color/view_backgroud" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <RelativeLayout android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="18.0sp" android:textColor="#ff333333" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="自动关闭红包详情页" />
+                <Switch android:id="@id/switch2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <View android:background="@color/view_backgroud" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <RelativeLayout android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="18.0sp" android:textColor="#ff333333" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="监视聊天列表(会误判)" />
+                <Switch android:id="@id/switch3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <View android:background="@color/view_backgroud" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <RelativeLayout android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="18.0sp" android:textColor="#ff333333" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="自动回到聊天列表页面" />
+                <Switch android:id="@id/switch4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <View android:background="@color/view_backgroud" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/red" android:background="@color/view_backgroud" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="以下功能为赞助者专享功能" />
+            <LinearLayout android:orientation="vertical" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="18.0sp" android:textColor="#ff333333" android:layout_gravity="center_vertical" android:id="@id/tv_seekbar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="延迟拆开红包" />
+                <SeekBar android:id="@id/seekbar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:max="10" />
+            </LinearLayout>
+            <View android:background="@color/view_backgroud" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <RelativeLayout android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="18.0sp" android:textColor="#ff333333" android:layout_gravity="center_vertical" android:id="@id/tv_set" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="设置不抢名单" />
+            </RelativeLayout>
+            <View android:background="@color/view_backgroud" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <TextView android:textSize="18.0sp" android:textColor="?android:textColorPrimary" android:background="@color/view_backgroud" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="自动回复" />
+            <RelativeLayout android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <EditText android:id="@id/et_replay" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="请输入自动回复的文字" />
+                <TextView android:textSize="18.0sp" android:textColor="#ff333333" android:layout_gravity="center_vertical" android:id="@id/tv_reply" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="自动回复" android:layout_below="@id/et_replay" />
+                <Switch android:id="@id/switch5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/et_replay" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <central.scjgt.view.DateTimeView android:id="@id/timeview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <Button android:textColor="@color/white" android:id="@id/btn_set" android:background="@drawable/btn_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="设置壁纸" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <EditText android:textColor="@color/white" android:textColorHint="@color/white" android:id="@id/et_name" android:layout_width="80.0dip" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginBottom="10.0dip" android:hint="您的姓" android:maxLength="1" android:layout_alignParentBottom="true" />
+</RelativeLayout>

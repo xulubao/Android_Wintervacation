@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceLarge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="应用双开设置成功" />
+    <TextView android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="您可以通过启动本应用的双开程序来管理双开应用，本应用的双开程序图标如下：" />
+    <Button android:id="@id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ICON" />
+</LinearLayout>

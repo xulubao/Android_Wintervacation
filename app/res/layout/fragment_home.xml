@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="18.0sp" android:textColor="?android:textColorPrimary" android:id="@id/tv_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:text="历史上的今天" />
+        <View android:background="@color/view_backgroud" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="5.0dip" android:layout_below="@id/tv_tips" />
+        <android.support.v4.view.ViewPager android:id="@id/viewpage" android:layout_width="fill_parent" android:layout_height="200.0dip" android:layout_marginLeft="25.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="25.0dip" android:layout_marginBottom="20.0dip" android:layout_below="@id/tv_tips" />
+    </RelativeLayout>
+    <View android:background="@color/view_backgroud" android:layout_width="fill_parent" android:layout_height="8.0dip" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="18.0sp" android:textColor="?android:textColorPrimary" android:id="@id/tv_tips2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:text="常用快捷键" />
+        <View android:background="@color/view_backgroud" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="5.0dip" android:layout_below="@id/tv_tips2" />
+        <GridView android:id="@id/gridview" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="15.0dip" android:verticalSpacing="10.0dip" android:numColumns="3" android:layout_below="@id/tv_tips2" />
+    </RelativeLayout>
+</LinearLayout>
